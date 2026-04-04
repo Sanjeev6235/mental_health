@@ -12,8 +12,8 @@
 
 ## 🌐 Live Demo
 
-- 🚀 Frontend: Coming Soon  
-- 🔗 Backend: Coming Soon  
+- 🚀 Frontend: https://mental-health-three-iota.vercel.app
+- 🔗 Backend: https://mental-health-z4qe.vercel.app
 
 ---
 

@@ -33,7 +33,7 @@ app.use('/api/chat', chatRoutes);
 app.use('/api/admin', adminRoutes);
 
 // Health check
-app.get('/api/health', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ status: 'OK', message: 'MindfulMe API is running 🌿' });
 });
 
