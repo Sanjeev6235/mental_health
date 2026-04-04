@@ -1,0 +1,10 @@
+import express from 'express';
+import { getDashboard, getAllUsers, deleteUser, getQuizAnalytics } from '../controllers/adminController.js';
+import { protect, adminOnly } from '../middleware/auth.js';
+const router = express.Router();
+router.use(protect, adminOnly);
+router.get('/dashboard', getDashboard);
+router.get('/users', getAllUsers);
+router.delete('/users/:id', deleteUser);
+router.get('/quiz-analytics', getQuizAnalytics);
+export default router;
