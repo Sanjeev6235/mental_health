@@ -19,12 +19,18 @@
 
 ## 📸 Screenshots
 
-> *(Add screenshots after deployment)*
+### 🏠 Dashboard
+![Dashboard](./screenshort/Dashboard.png)
 
-- Dashboard  
-- Mood Tracker  
-- Chat Interface  
-- Admin Panel  
+### 😊 Mood Tracker
+![Mood](./screenshort/MoodTracker.png)
+
+### 🤖 Chatbot
+![Chatbot](./screenshort/ChatInterface%20.png)
+
+## ⚙️ Admin Panel
+![AdminPanel](./screenshort/AdminPanel.png)
+  
 
 ---
 
