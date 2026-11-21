@@ -1,137 +1,114 @@
-# 🌿 MindfulMe — Mental Health Support App
+# MindfulMe — Mental Wellness Support Application
 
-![MERN](https://img.shields.io/badge/MERN-FullStack-green)
-![React](https://img.shields.io/badge/Frontend-React-blue)
-![Node](https://img.shields.io/badge/Backend-Node.js-green)
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-darkgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![MERN](https://img.shields.io/badge/Architecture-MERN-16a34a?style=flat-square)
+![React](https://img.shields.io/badge/Frontend-React-61dafb?style=flat-square&logo=react)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-47a248?style=flat-square&logo=mongodb)
+![JWT](https://img.shields.io/badge/Auth-JWT-111827?style=flat-square)
 
-> 💡 A full-stack MERN application designed to improve mental wellness through mood tracking, AI-powered support, and psychological insights.
+MindfulMe is a full-stack web application focused on mental wellness awareness and personal reflection. It combines mood journaling, self-assessment questionnaires, progress visualisation, and a conversational support interface.
 
----
+> **Important:** MindfulMe is an educational wellness project, not a medical device or a substitute for diagnosis, therapy, or emergency care. Quiz results and chatbot responses should not be treated as clinical advice.
 
-## 🌐 Live Demo
+## Live Demo
 
-- 🚀 Frontend: https://mental-health-three-iota.vercel.app
-- 🔗 Backend: https://mental-health-z4qe.vercel.app
+- **Frontend:** [mental-health-three-iota.vercel.app](https://mental-health-three-iota.vercel.app)
+- **Backend:** [mental-health-z4qe.vercel.app](https://mental-health-z4qe.vercel.app)
 
----
+## Screenshots
 
-## 📸 Screenshots
+Screenshots are stored in the repository's `screenshort/` directory:
 
-### 🏠 Dashboard
-![Dashboard](./screenshort/Dashboard.png)
+- Dashboard — `screenshort/Dashboard.png`
+- Mood tracker — `screenshort/MoodTracker.png`
+- Chat interface — `screenshort/ChatInterface .png`
+- Admin panel — `screenshort/AdminPanel.png`
 
-### 😊 Mood Tracker
-![Mood](./screenshort/MoodTracker.png)
+## Main Features
 
-### 🤖 Chatbot
-![Chatbot](./screenshort/ChatInterface%20.png)
+### Account and profile
+- JWT-based authentication
+- Password hashing
+- User and administrator roles
+- Protected application areas
+- Profile and password management
 
-## ⚙️ Admin Panel
-![AdminPanel](./screenshort/AdminPanel.png)
-  
+### Mood tracking
+- Record daily mood using an emoji-based interface
+- Add an intensity rating and notes
+- Review mood history
+- View mood trends and summaries
 
----
+### Self-assessment
+- Wellness questionnaires inspired by common screening formats
+- Automatic score calculation
+- Personal feedback and assessment history
 
-## ✨ Features
+### Chat support
+- Conversational support interface
+- Rule-based responses that can run without an external AI service
+- Chat history support
+- Safety-oriented crisis alert handling
 
-### 🔐 Authentication & Authorization
-- JWT-based authentication system
-- Secure password hashing using bcrypt
-- Role-based access control (User/Admin)
-- Protected routes with session persistence
+### Administration and progress
+- User management
+- Platform and mood analytics
+- Quiz activity insights
+- Daily activity streak tracking
+- PDF report generation
 
----
+## Technology Stack
 
-### 😊 Mood Tracker
-- Track daily mood using emoji UI
-- Intensity scale (1–10)
-- Add notes for better tracking
-- Weekly, monthly, yearly analytics
-- Data visualization with charts
+| Area | Technology |
+| --- | --- |
+| Frontend | React, Vite, Tailwind CSS |
+| State management | Redux Toolkit |
+| Backend | Node.js, Express.js |
+| Database | MongoDB, Mongoose |
+| Authentication | JWT, bcryptjs |
+| Charts | Recharts |
+| Animation | Framer Motion |
+| PDF export | jsPDF |
 
----
+## Repository Structure
 
-### 🧠 Mental Health Quizzes
-- Anxiety (GAD-7)
-- Depression (PHQ-9)
-- Stress (PSS-10)
-- Auto scoring and analysis
-- Personalized feedback system
-- History tracking
+- `client/` — React + Vite application
+- `server/` — Node.js and Express API
+- `screenshort/` — project screenshots
 
----
+## Getting Started
 
-### 🤖 AI Chatbot
-- Real-time chat interface
-- Rule-based chatbot (works without API)
-- Optional AI integration (OpenAI)
-- Crisis detection alerts
-- Chat history storage
+### Prerequisites
 
----
+- Node.js and npm
+- MongoDB local instance or Atlas database
 
-### 👤 User Profile
-- Edit profile details
-- Change password securely
-- Track activity stats
-- Generate PDF reports
+### 1. Clone
 
----
+`git clone https://github.com/Sanjeev6235/mental_health.git`
 
-### ⚙️ Admin Dashboard
-- User management system
-- Platform analytics
-- Mood distribution insights
-- Quiz analytics and reports
+### 2. Install dependencies
 
----
+Install the root dependencies with `npm install` if the root package scripts are used. Also install dependencies inside the client and server directories if they have separate package files.
 
-### 🔥 Streak System
-- Tracks daily login streak
-- Encourages consistent usage
-- Auto reset if missed
+### 3. Configure the backend
 
----
+Create the backend environment file and set the MongoDB connection string, JWT secret, and required server settings according to the server configuration. Keep all secrets private.
 
-## 🏗️ Project Structure
+### 4. Run the application
 
-mindful-app/
-├── client/ # React + Vite frontend
-│ ├── components/
-│ ├── pages/
-│ ├── redux/
-│ └── services/
-│
-└── server/ # Node.js + Express backend
-├── models/
-├── controllers/
-├── routes/
-├── middleware/
-└── index.js
+Start the backend using its development script, then start the Vite frontend in a separate terminal. Open the local frontend URL shown in the terminal.
 
+## Privacy & Safety
+
+- Do not enter sensitive personal or medical information into a demo deployment.
+- Protect database credentials and authentication secrets.
+- Any screening questionnaire is for reflection/education only; it does not establish a diagnosis.
+- If someone may be in immediate danger, contact local emergency services or a qualified crisis-support provider.
+
+## Author
+
+**Sanjeev Kumar** · [GitHub](https://github.com/Sanjeev6235)
 
 ---
 
-## 🛠️ Tech Stack
-
-| Category     | Technology |
-|-------------|-----------|
-| Frontend    | React, Vite, Tailwind CSS |
-| Backend     | Node.js, Express.js |
-| Database    | MongoDB, Mongoose |
-| State Mgmt  | Redux Toolkit |
-| Auth        | JWT, bcryptjs |
-| Charts      | Recharts |
-| Animation   | Framer Motion |
-| PDF         | jsPDF |
-
----
-
-## ⚙️ Installation & Setup
-
-
-### 1️⃣ Clone Repository
-```bash
-git clone https://github.com/Sanjeev6235/mental_health.git
+Built as a learning project to explore full-stack development and wellness-focused user experiences.
